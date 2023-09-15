@@ -2,21 +2,552 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    .main {
+        display: flex;
+        justify-content: center;
+        /* 在水平方向上居中对齐 */
+        align-items: center;
+        height: 100vh;
+        /* 在垂直方向上居中对齐 */
+    }
+
+    .box1 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .box2 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .box3 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .box4 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .box5 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .box6 {
+        position: relative;
+        border: black solid 1px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        box-shadow: inset 0 0 30px 10px rgba(92, 85, 85, 0.5);
+        margin: 1px;
+    }
+
+    .spot1 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 50%;
+        /* 从顶部向下偏移 50% */
+        left: 50%;
+        /* 从左侧向右偏移 50% */
+        transform: translate(-50%, -50%);
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #f30b0b;
+        border: 5px solid #f30b0b;
+        border-radius: 50%;
+
+    }
+
+    .spot2 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot2a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot3 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot3a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        /* 从顶部向下偏移 50% */
+        left: 50%;
+        /* 从左侧向右偏移 50% */
+        transform: translate(-50%, -50%);
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot3b {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot4 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #ff0000;
+        border: 5px solid #ff0000;
+        border-radius: 50%;
+
+    }
+
+    .spot4a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #ff0000;
+        border: 5px solid #ff0000;
+        border-radius: 50%;
+
+    }
+
+    .spot4b {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #ff0000;
+        border: 5px solid #ff0000;
+        border-radius: 50%;
+
+    }
+
+    .spot4c {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #ff0000;
+        border: 5px solid #ff0000;
+        border-radius: 50%;
+
+    }
+
+
+    .spot5 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot5a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot5b {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot5c {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+
+    .spot5d {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 50%;
+        /* 从顶部向下偏移 50% */
+        left: 50%;
+        /* 从左侧向右偏移 50% */
+        transform: translate(-50%, -50%);
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot6 {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot6a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot6b {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot6c {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        bottom: 10%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+
+    .spot6d {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 50%;
+        /* 从顶部向下偏移 50% */
+        left: 10%;
+        /* 从左侧向右偏移 50% */
+        transform: translate(0%, -50%);
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+
+    .spot6e {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        /* 子元素设置为绝对定位 */
+        top: 50%;
+        /* 从顶部向下偏移 50% */
+        right: 10%;
+        /* 从左侧向右偏移 50% */
+        transform: translate(0%, -50%);
+        /* 使用 transform 属性居中 */
+
+
+        /*圓形*/
+        background-color: #000000;
+        border: 5px solid #000000;
+        border-radius: 50%;
+
+    }
+</style>
 
 <body>
-  <script>
-    const input = prompt()
-    for (let i = 1; i <= input; i++) {
-      for (let j = 1; j <= i; j++) {
-        document.write('★')
-      }
-      document.write('<br>')
-    }
-  </script>
+    <div class="main">
+        <div class="box1">
+            <div class="spot1"></div>
+        </div>
+
+        <div class="box2">
+            <div class="spot2"></div>
+            <div class="spot2a"></div>
+        </div>
+        <div class="box3">
+            <div class="spot3"></div>
+            <div class="spot3a"></div>
+            <div class="spot3b"></div>
+        </div>
+        <div class="box4">
+            <div class="spot4"></div>
+            <div class="spot4a"></div>
+            <div class="spot4b"></div>
+            <div class="spot4c"></div>
+        </div>
+        <div class="box5">
+            <div class="spot5"></div>
+            <div class="spot5a"></div>
+            <div class="spot5b"></div>
+            <div class="spot5c"></div>
+            <div class="spot5d"></div>
+        </div>
+        <div class="box6">
+            <div class="spot6"></div>
+            <div class="spot6a"></div>
+            <div class="spot6b"></div>
+            <div class="spot6c"></div>
+            <div class="spot6d"></div>
+            <div class="spot6e"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
